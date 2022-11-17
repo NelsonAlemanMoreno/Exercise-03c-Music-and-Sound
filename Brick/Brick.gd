@@ -48,6 +48,9 @@ func _physics_process(_delta):
 		pass
 
 func hit(_ball):
+	var Brick_sound = get_node_or_null("/root/Game/Brick_Sound")
+	if Brick_sound != null:
+		Brick_sound.play()
 	die()
 
 func die():
