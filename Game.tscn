@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Brick/Brick_Container.gd" type="Script" id=1]
 [ext_resource path="res://Paddle/Paddle.tscn" type="PackedScene" id=2]
@@ -10,6 +10,10 @@
 [ext_resource path="res://UI/Instructions.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Effects/Camera.gd" type="Script" id=9]
 [ext_resource path="res://Assets/Megalobass.mp3" type="AudioStream" id=10]
+[ext_resource path="res://Assets/paddle.wav" type="AudioStream" id=11]
+[ext_resource path="res://Assets/Brick.wav" type="AudioStream" id=12]
+[ext_resource path="res://Assets/wall.wav" type="AudioStream" id=13]
+[ext_resource path="res://Assets/die_sound.wav" type="AudioStream" id=14]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 100, 500 )
@@ -96,9 +100,13 @@ stream = ExtResource( 10 )
 autoplay = true
 
 [node name="Wall_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
 
 [node name="Paddle_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 11 )
 
 [node name="Brick_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
 
 [node name="Die_sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
