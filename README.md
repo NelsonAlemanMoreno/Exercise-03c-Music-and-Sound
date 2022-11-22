@@ -31,5 +31,5 @@ Adding a face, Shaders, Powerups, etc.
 
 ## Created by 
 
-Jason Francis
+Nelson Aleman-Moreno
 ```
